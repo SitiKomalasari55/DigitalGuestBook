@@ -1,7 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-
+use App\Http\Controllers\Create;
+use App\Http\Controllers\Read;
+use App\Http\Controllers\Update;
+use App\Http\Controllers\Delete;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -16,3 +19,8 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+Route::get('/create', [Create::class, 'Create']);
+Route::get('/read', [Read::class, 'Read']);
+Route::get('/update', [Update::class, 'Update']);
+Route::get('/delete', [Delete::class, 'Delete']);
