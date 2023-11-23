@@ -8,5 +8,6 @@ class Create extends Controller
 {
     public function Create (){
         return 'ini halaman Create';
+        
     }
 }

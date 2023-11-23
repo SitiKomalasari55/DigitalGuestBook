@@ -8,5 +8,6 @@ class Update extends Controller
 {
     public function Update (){
         return 'ini halaman Update';
+        
     }
 }

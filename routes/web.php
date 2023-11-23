@@ -24,3 +24,4 @@ Route::get('/create', [Create::class, 'Create']);
 Route::get('/read', [Read::class, 'Read']);
 Route::get('/update', [Update::class, 'Update']);
 Route::get('/delete', [Delete::class, 'Delete']);
+

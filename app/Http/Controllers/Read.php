@@ -8,5 +8,6 @@ class Read extends Controller
 {
     public function Read (){
         return 'ini halaman Read';
+        
     }
 }

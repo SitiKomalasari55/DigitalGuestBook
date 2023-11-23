@@ -8,5 +8,6 @@ class Delete extends Controller
 {
     public function Delete (){
         return 'ini halaman Delete';
+        
     }
 }
