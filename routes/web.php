@@ -20,9 +20,9 @@ use App\Http\Controllers\MahasiswaController;
 |
 */
 
-// Route::get('/', function () {
-//     return view('welcome');
-// });
+Route::get('/', function () {
+    return view('welcome');
+});
 
 Route::get('/create', [Create::class, 'Create']);
 Route::get('/read', [Read::class, 'Read']);
@@ -36,7 +36,10 @@ Route::get('/user', [UserCtrl::class, 'index']);
 Route::get('/index', [UserCtrl::class, 'indexuser']);
 
 
-Route::get('/', [MahasiswaController::class, 'index'])->name('mahasiswa.index');;
+Route::get('/op', [MahasiswaController::class, 'index'])->name('mahasiswa.index');;
 Route::get('/create', [MahasiswaController::class, 'create'])->name('mahasiswa.create');
 
 Route::resource('mahasiswa', MahasiswaController::class);
+Auth::routes();
+
+Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
